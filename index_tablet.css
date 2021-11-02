@@ -65,7 +65,9 @@ header {
   margin-right: 1rem;
 }
 
-
+.logo_celu {
+  display: none;
+}
 
 /* CSS GENERAL */
 
