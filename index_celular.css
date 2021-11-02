@@ -94,7 +94,7 @@ nav ul li a:hover {
 
 .fondo {
   height: 140vw;
-  background-image: url(/imagenes/29133.jpg);
+  background-image: url(/29133.jpg);
   background-repeat: no-repeat;
   background-size: 200%;
   color: rgb(255, 255, 255);
@@ -277,7 +277,7 @@ justify-content: center;
   background-size: 320%;
   margin-top: 30vw;
   margin-bottom: 30vw;
-  background-image: url(/imagenes/beneficios.svg);
+  background-image: url(/beneficios.svg);
 }
 
 .titulo_beneficios {
@@ -364,7 +364,7 @@ justify-content: center;
 /* /////////////////////////////////////////////////////// MAS INFORMACION //////////////////////////////////////////////////// */
 
 .contenido_informacion {
-  background-image: url(/imagenes/fondo-video.svg);
+  background-image: url(/fondo-video.svg);
   background-size: 150%;
   display: flex;
   justify-content: center;
@@ -411,7 +411,7 @@ form {
   margin: 0 auto;
   width: 90vw;
   padding: 1rem;
-  background-image: url(/imagenes/patron.jpg);
+  background-image: url(/patron.jpg);
   background-size: 150%;
   background-repeat: no-repeat;
   text-align: center;
