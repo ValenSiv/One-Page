@@ -51,18 +51,25 @@ header {
   box-shadow: 0.1rem black;
   border-radius: 0rem 0rem 1rem 1rem;
   z-index: 1;
+  box-shadow: 0px 2px 5px 0px rgba(119, 119, 119, 0.438);
+
 }
 
 .menu {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
 .item_menu {
   margin-left: 1rem;
   margin-right: 1rem;
+
 }
 
+.logo {
+  width: 8rem;
+}
 
 
 /* CSS GENERAL */
@@ -74,7 +81,7 @@ header {
 
 .fondo {
   height: 45rem;
-  background-image: url(/29133.jpg);
+  background-image: url(/imagenes/29133.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   color: rgb(255, 255, 255);
@@ -249,7 +256,7 @@ width: 40rem;
   background-size: 100%;
   margin-top: 9rem;
   margin-bottom: 9rem;
-  background-image: url(/beneficios.svg);
+  background-image: url(/imagenes/beneficios.svg);
 }
 
 .titulo_beneficios {
@@ -328,7 +335,7 @@ width: 40rem;
 
 .contenido_informacion {
   height: 42rem;
-  background-image: url(/fondo-video.svg);
+  background-image: url(/imagenes/fondo-video.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
@@ -369,15 +376,16 @@ width: 40rem;
 
 form {
   margin: 0 auto;
-  width: 31.25rem;
+  width: 20rem;
   padding: 1rem;
-  background-image: url(/patron.jpg);
+  background-image: url(/imagenes/patron.jpg);
   background-size: 150%;
   background-repeat: no-repeat;
   text-align: center;
   margin-bottom: 7rem;
   border-radius: 5px;
   border: #213F48 3px solid;
+  box-shadow: 0px 0px 8px 2px rgba(119, 119, 119, 0.144);
 }
 
 .control {
@@ -411,6 +419,7 @@ margin-bottom: 0.5rem;
 
 
 
+
 /* /////////////////////////////////////////////////////////// FOOTER ///////////////////////////////////// */
 
 
@@ -426,6 +435,7 @@ footer {
 .alumno {
   padding-left: 10px;
   padding-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .datos {

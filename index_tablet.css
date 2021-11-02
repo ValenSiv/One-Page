@@ -52,6 +52,7 @@ header {
   box-shadow: 0.1rem black;
   border-radius: 0rem 0rem 1rem 1rem;
   z-index: 1;
+
 }
 
 .menu {
@@ -75,7 +76,7 @@ header {
 
 .fondo {
   height: 60vw;
-  background-image: url(/29133.jpg);
+  background-image: url(/imagenes/29133.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   color: rgb(255, 255, 255);
@@ -254,7 +255,7 @@ width: 70vw;
   background-size: 320%;
   margin-top: 9vw;
   margin-bottom: 9rem;
-  background-image: url(/beneficios.svg);
+  background-image: url(/imagenes/beneficios.svg);
 }
 
 .titulo_beneficios {
@@ -332,7 +333,7 @@ width: 70vw;
 /* /////////////////////////////////////////////////////// MAS INFORMACION //////////////////////////////////////////////////// */
 
 .contenido_informacion {
-  background-image: url(/fondo-video.svg);
+  background-image: url(/imagenes/fondo-video.svg);
   background-repeat: no-repeat;
   background-size: 120%;
   display: flex;
@@ -376,7 +377,7 @@ form {
   margin: 0 auto;
   width: 20rem;
   padding: 1rem;
-  background-image: url(/patron.jpg);
+  background-image: url(/imagenes/patron.jpg);
   background-size: 150%;
   background-repeat: no-repeat;
   text-align: center;

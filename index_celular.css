@@ -38,33 +38,52 @@ h3 {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 5vw;
+  font-size: 4.5vw;
 }
 
 header {
-  position: fixed;
   width: 100%;
   background-color: white;
-  height: 3.5rem;
-  display: flex;
-  justify-content: center;
   align-items: center;
   box-shadow: 0.1rem black;
-  border-radius: 0rem 0rem 1rem 1rem;
   z-index: 1;
 }
 
-.menu {
+nav ul {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+nav ul li {
   list-style: none;
+  width: 90%;
 }
 
-.item_menu {
-  margin-left: 1rem;
-  margin-right: 1rem;
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  background: rgba(6, 117, 32, 0.712);
+  padding: 1em;
+  color: white;
 }
 
+nav ul li a:hover {
+  background: rgb(28, 104, 66);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
 
+.logo {
+  display: none;
+}
+
+.logo_celu {
+  width: 70vw;
+  margin: auto;
+  display: flex;
+}
 
 /* CSS GENERAL */
 
@@ -75,7 +94,7 @@ header {
 
 .fondo {
   height: 140vw;
-  background-image: url(/29133.jpg);
+  background-image: url(/imagenes/29133.jpg);
   background-repeat: no-repeat;
   background-size: 200%;
   color: rgb(255, 255, 255);
@@ -132,8 +151,8 @@ justify-content: center;
 
 .cards_izquierda {
   padding: 1rem;
-  width: 70vw;
-  height: 90vw;  
+  width: 60vw;
+  height: 75vw;  
   border-radius: 1rem;
   margin: 3rem 0rem 0rem 0rem;
   background: linear-gradient(to right, #6aa17b, rgb(127, 196, 121));
@@ -144,8 +163,8 @@ justify-content: center;
 .cards_centro {
   
   padding: 1rem;
-  width: 70vw;
-  height: 90vw; 
+  width: 60vw;
+  height: 75vw;  
   border-radius: 1rem;
   margin-top: 3rem;
   background-color: rgb(127, 196, 121);
@@ -155,8 +174,8 @@ justify-content: center;
 
 .cards_derecha {
   padding: 1rem;
-  width: 70vw;
-  height: 90vw; 
+  width: 60vw;
+  height: 75vw;   
   border-radius: 1rem;
   margin: 3rem 0rem 0rem 0rem;
   background: linear-gradient(to left, #6aa17b, rgb(127, 196, 121));
@@ -165,11 +184,11 @@ justify-content: center;
 }
 
 .p_card {
-  font-size: 6vw;
+  font-size: 5vw;
 }
 
 .icono {
-  width: 40vw;
+  width: 35vw;
   display: block;
   margin: auto;
 
@@ -252,13 +271,13 @@ justify-content: center;
 /* //////////////////////////////////////  BENEFICIOS   //////////////////////////////////// */
 
 .contenido_beneficios {  
-  height: 850vw;
+  height: 700vw;
   text-align: center;
   color: rgb(255, 255, 255);
   background-size: 320%;
   margin-top: 30vw;
   margin-bottom: 30vw;
-  background-image: url(/beneficios.svg);
+  background-image: url(/imagenes/beneficios.svg);
 }
 
 .titulo_beneficios {
@@ -273,17 +292,17 @@ justify-content: center;
 }
 
 .icono_beneficios {
-  display: block;
+  
   margin: auto;
   border-radius: 10px;
-  width: 60vw;
+  width: 40vw;
   background: linear-gradient(to top, #467956, rgb(120, 187, 114));
   border: white 4px solid;
 }
 
 .pastilla_beneficios_izquierda {
-  width: 90vw;
-  height: 120vw;
+  width: 70vw;
+  height: 100vw;
   background-color: rgb(255, 255, 255);
   color: #333333;
   border-radius: 10px;
@@ -294,8 +313,8 @@ justify-content: center;
 }
 
 .pastilla_beneficios_derecha {
-  width: 90vw;
-  height: 120vw;
+  width: 70vw;
+  height: 100vw;
   background-color: rgb(255, 255, 255);
   color: #333333;
   border-radius: 10px;
@@ -303,6 +322,9 @@ justify-content: center;
   border: rgb(15, 139, 79) 2px solid;
   text-align: center;
   padding-top: 1rem;
+  display: flex;
+  flex-direction: flex-end;
+  flex-wrap: wrap;
 }
 
 .pastilla_beneficios_izquierda :last-child {
@@ -315,8 +337,8 @@ justify-content: center;
 }
 
 .pastilla_beneficios_unica {
-  width: 90vw;
-  height: 120vw;
+  width: 70vw;
+  height: 100vw;
   background-color: rgb(255, 255, 255);
   color: #333333;
   border-radius: 10px;
@@ -324,6 +346,9 @@ justify-content: center;
   border: rgb(15, 139, 79) 2px solid;
   text-align: center;
   padding-top: 1rem;
+  display: flex;
+  flex-direction: flex-end;
+  flex-wrap: wrap;
 }
 
 .pastilla_beneficios_unica :first-child {
@@ -339,19 +364,18 @@ justify-content: center;
 /* /////////////////////////////////////////////////////// MAS INFORMACION //////////////////////////////////////////////////// */
 
 .contenido_informacion {
-  background-image: url(/fondo-video.svg);
+  background-image: url(/imagenes/fondo-video.svg);
   background-size: 150%;
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
   margin-top: 30vw;
-  /* height: 170vw; */
 }
 
 .texto_informacion {
   color: white;
   text-align: center;
-  /* width: 100vw; */
+
 }
 
 .texto_informacion :nth-child(1) {
@@ -370,7 +394,6 @@ justify-content: center;
   margin-top: 2rem;
   width: 100vw;
   height: 50vw;
-
   border: white 3px solid;
 }
 
@@ -388,7 +411,7 @@ form {
   margin: 0 auto;
   width: 90vw;
   padding: 1rem;
-  background-image: url(/patron.jpg);
+  background-image: url(/imagenes/patron.jpg);
   background-size: 150%;
   background-repeat: no-repeat;
   text-align: center;
