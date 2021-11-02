@@ -1,9 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 
+/* CSS GENERAL  */
 
 a {
   font-family: sans-serif;
@@ -11,150 +13,106 @@ a {
   color: #242424;
 }
 
+a:hover {
+  color: #213F48;
+  text-decoration: underline;
+}
+
 h1 {
-  font-size: 10em;
+  font-size: 20vw;
   color: rgb(255, 255, 255);
   font-family: 'Lobster', cursive;
-  display: flex;
-  justify-content: center;
 }
 
 h2 {
-  font-size: 3em;
   padding-bottom: 0.3em;
+  font-size: 7vw;
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
 }
 
 h3 {
-  font-size: 2em;
-  padding-bottom: 0.3em;
+  font-size: 6vw;
+  padding-bottom: 0.3rem;
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
 }
 
 p {
-  font-size: 1.25em;
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
+  font-size: 5vw;
 }
 
 header {
   position: fixed;
   width: 100%;
   background-color: white;
-  height: 4.375em;
+  height: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0.1em black;
-  border-radius: 0em 0em 1em 1em;
+  box-shadow: 0.1rem black;
+  border-radius: 0rem 0rem 1rem 1rem;
   z-index: 1;
 }
 
-ul{
+.menu {
   display: flex;
   list-style: none;
-  font-size: 1.25em;
 }
 
-li {
-  margin-left: 1em;
-  margin-right: 1em;
+.item_menu {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 
 
-a:hover {
-  color: #213F48;
-  text-decoration: underline;
-}
+/* CSS GENERAL */
+
+
+
+
+/* ////////////////////////////////////// INICIO    //////////////////////////////////// */
 
 .fondo {
-  height: 50em;
-  background-image: url(/imagenes/fondo.jpg);
+  height: 140vw;
+  background-image: url(/imagenes/29133.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 200%;
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2em;
-  
+}
+
+.fondo :nth-child(1) {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.subtitulo {
+margin-top: 0.5rem;
+padding: 0.5rem;
+border-top: white 6px solid;
+width: 90vw;
 }
 
 .contenido_inicio {
-  width: 70%;
+  width: 90vw;
   margin: auto;
   text-align: center;
-  margin-bottom: 2em;
-  margin-top: 6em;
-  padding: 2em 0em 0em 0em;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  padding: 2rem 0rem 0rem 0rem;
   color: #333333;
-
 }
 
-.contenido_beneficios {
-  width: 100%;
-  height: 60em;
-  margin: auto;
-  text-align: center;
-  color: white;
-  background: linear-gradient(to bottom, #385474, rgb(94, 109, 179));
-  padding-top: 6em;
+.contenido_inicio :nth-child(1) {
+  font-size: 11vw;
 }
 
-
-.contenido_beneficios :last-child {
-  width: 70%;
-  margin: auto;
-}
-
-.contenido_recetas {
-  height: 15em;
-  width: 100%;
-  text-align: center;
-  background-size: 70%;
-  color: #333333;
-  margin-top: 15em;
-}
-
-.recetas_sencillas {
-  width: 70%;
-  height: 40em;
-  margin: auto;
-  padding: 3em;
-  text-align: center;
-  color: white;
-  background-image: linear-gradient(225deg, #385474 0%, rgb(94, 109, 179) 100%);
-  transform: skewY(-3deg);
-  border-radius: 1em;
-}
-
-.recetas_sencillas_medio {
-  width: 100%;
-  height: 40em;
-  margin: auto;
-  margin-top: 6em;
-  margin-bottom: 6em;
-  padding: 3em;
-  text-align: center;
-  color: #333333;
-  background-image: linear-gradient(225deg, #385474 , rgb(94, 109, 179) );
-  transform: skewY(-3deg);
-  border-radius: 1em;
-  color: white;
-}
-
-.si {
-  transform: skewY(3deg);
-}
-
-.contenido_recetas :last-child {
-  width: 70%;
-  margin: auto;
+.contenido_inicio :nth-child(2) {
+  font-size: 5vw;
 }
 
 .links {
@@ -163,54 +121,330 @@ a:hover {
 
 .cards {
   display: flex;
-  justify-content: center;
-  padding: 20px;
+  flex-wrap: wrap;
+justify-content: center;
+}
+
+.cards :last-child {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cards_izquierda {
+  padding: 1rem;
+  width: 70vw;
+  height: 90vw;  
+  border-radius: 1rem;
+  margin: 3rem 0rem 0rem 0rem;
+  background: linear-gradient(to right, #6aa17b, rgb(127, 196, 121));
+  box-shadow: 0px 7px 1px 0px rgba(119, 119, 119, 0.2);
+  text-align: center;
+}
+
+.cards_centro {
+  
+  padding: 1rem;
+  width: 70vw;
+  height: 90vw; 
+  border-radius: 1rem;
+  margin-top: 3rem;
+  background-color: rgb(127, 196, 121);
+  box-shadow: 0px 7px 1px 0px rgba(119, 119, 119, 0.2);
+  text-align: center;
+}
+
+.cards_derecha {
+  padding: 1rem;
+  width: 70vw;
+  height: 90vw; 
+  border-radius: 1rem;
+  margin: 3rem 0rem 0rem 0rem;
+  background: linear-gradient(to left, #6aa17b, rgb(127, 196, 121));
+  box-shadow: 0px 7px 1px 0px rgba(119, 119, 119, 0.2);
+  text-align: center;
+}
+
+.p_card {
+  font-size: 6vw;
+}
+
+.icono {
+  width: 40vw;
+  display: block;
+  margin: auto;
+
+}
+
+.cards :nth-child(2) {
   color: white;
-  margin-bottom: 8em;
 }
 
-.cards div:nth-child(1) {
-  width: 12em;
-  border: #ffffff solid;
-  border-radius: 1em;
-  padding: 20px;
-  margin: 20px;
-  height: 15em;
-  background: linear-gradient(to right, #678cb9, rgb(94, 109, 179));
-}
-
-.cards div:nth-child(2) {
-  width: 12em;
-  border: #ffffff solid;
-  border-radius: 1em;
-  padding: 20px;
-  margin: 20px;
-  margin-top: 60px;
-  height: 15em;
-  background-color: rgb(94, 109, 179);
-}
-
-.cards div:nth-child(3) {
-  width: 12em;
-  border: #ffffff solid;
-  border-radius: 1em;
-  padding: 20px;
-  margin: 20px;
-  height: 15em;
-  background: linear-gradient(to left, #678cb9, rgb(94, 109, 179));
+.cards :nth-child(3) {
+  color: white;
 }
 
 
-.cuadro_recetas {
+
+
+/* ////////////////////////////////////////// ILUSTRACIONES //////////////////////////////////// */
+
+#beneficios {
+  margin-top: 2rem;
+  padding-top: 5rem;
+}
+
+.seccion_info_1 {
+  width: 90vw;
+  height: 140vw;
+  border: #2c6e4a 3px solid;
+  margin: auto;
+
+  box-shadow: 6px 7px 1px 1px rgba(119, 119, 119, 0.2);
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.texto_info {
+  padding-top: 1rem;
+}
+
+.texto_info :nth-child(1) {
+  font-size: 9vw;
+  color: #333333;
+
+}
+
+.texto_info :nth-child(2) {
+  font-size: 5vw;
+  color: #333333;
+  
+}
+
+.seccion_info_2 {
+  width: 90vw;
+  height: 150vw;
+  border: #2c6e4a 3px solid;
+  margin: auto;
+  box-shadow: 6px 7px 1px 1px rgba(119, 119, 119, 0.2);
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.primera_ilustracion {
+  width: 80vw;
+}
+
+.segunda_ilustracion {
+  width: 70vw;
+  padding-left: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////  BENEFICIOS   //////////////////////////////////// */
+
+.contenido_beneficios {  
+  height: 850vw;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-size: 320%;
+  margin-top: 30vw;
+  margin-bottom: 30vw;
+  background-image: url(/imagenes/beneficios.svg);
+}
+
+.titulo_beneficios {
+  padding: 4rem 1rem 0rem 1rem;
+}
+
+.TODO {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.icono_beneficios {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  width: 60vw;
+  background: linear-gradient(to top, #467956, rgb(120, 187, 114));
+  border: white 4px solid;
+}
+
+.pastilla_beneficios_izquierda {
+  width: 90vw;
+  height: 120vw;
+  background-color: rgb(255, 255, 255);
+  color: #333333;
+  border-radius: 10px;
+  margin: 30px 0px 0px 0px;
+  border: rgb(15, 139, 79) 2px solid;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.pastilla_beneficios_derecha {
+  width: 90vw;
+  height: 120vw;
+  background-color: rgb(255, 255, 255);
+  color: #333333;
+  border-radius: 10px;
+  margin: 30px 0px 0px 0px;
+  border: rgb(15, 139, 79) 2px solid;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.pastilla_beneficios_izquierda :last-child {
+  padding: 0.3rem 0.3rem 0rem 0.1rem;
+}
+
+.pastilla_beneficios_derecha :first-child {
+  padding: 0.1rem 0.1rem 0rem 0.1rem;
+
+}
+
+.pastilla_beneficios_unica {
+  width: 90vw;
+  height: 120vw;
+  background-color: rgb(255, 255, 255);
+  color: #333333;
+  border-radius: 10px;
+  margin: 30px 0px 0px 0px;
+  border: rgb(15, 139, 79) 2px solid;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.pastilla_beneficios_unica :first-child {
+  padding: 0.1rem 0.1rem 0rem 0.1rem;
+}
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////// MAS INFORMACION //////////////////////////////////////////////////// */
+
+.contenido_informacion {
+  background-image: url(/imagenes/fondo-video.svg);
+  background-size: 150%;
   display: flex;
   justify-content: center;
-  background-color: #384764;
-  width: 80%;
-  margin: 2em auto auto auto;
-  height: 25em;
-  /* border-radius: 1em; */
+  padding-bottom: 2rem;
+  margin-top: 30vw;
+  /* height: 170vw; */
 }
 
-.video {
-  width: 30%;
+.texto_informacion {
+  color: white;
+  text-align: center;
+  /* width: 100vw; */
+}
+
+.texto_informacion :nth-child(1) {
+  font-size: 9vw;
+}
+
+.texto_informacion :nth-child(2) {
+  font-size: 6vw;
+}
+
+.texto_informacion :first-child {
+  padding-top: 2rem;
+}
+
+.texto_informacion :last-child {
+  margin-top: 2rem;
+  width: 100vw;
+  height: 50vw;
+
+  border: white 3px solid;
+}
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////// CONTACTO //////////////////////////////////////////////////// */
+
+
+form {
+  margin: 0 auto;
+  width: 90vw;
+  padding: 1rem;
+  background-image: url(/imagenes/patron.jpg);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-bottom: 7rem;
+  border-radius: 5px;
+  border: #213F48 3px solid;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+
+.formulario {
+display: flex;
+justify-content: center;
+margin-top: 7rem;
+margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////// FOOTER ///////////////////////////////////// */
+
+
+footer {
+  height: 100vw;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 7vw;
+  justify-content: center;
+  background: linear-gradient(to top, #467956, rgb(120, 187, 114));
+}
+
+.alumno {
+  padding-left: 5px;
+
+}
+
+.datos {
+  margin-top: 2rem;
+  padding-left: 25px;
+}
+
+.redes {
+  margin-top: 1rem;
+  width: 20vw;
+
 }
