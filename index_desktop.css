@@ -71,6 +71,10 @@ header {
   width: 8rem;
 }
 
+.logo_celu {
+  display: none;
+}
+
 
 /* CSS GENERAL */
 
